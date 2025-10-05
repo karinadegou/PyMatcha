@@ -1,0 +1,29 @@
+# ===========================
+# PyMatcha Dependency List
+# Author: karinadegou
+# Created: 2025-10-05
+# ===========================
+
+# --- Core Dependencies ---
+# NumPy 是核心张量计算库
+numpy>=1.23.0,<1.27.0
+
+# --- Testing & Debugging ---
+pytest>=7.0.0
+pytest-cov>=4.0.0   # 代码覆盖率测试
+black>=24.0.0       # 自动格式化工具
+flake8>=7.0.0       # 代码风格检查
+
+# --- Optional: Documentation ---
+sphinx>=7.0.0
+sphinx-rtd-theme>=2.0.0
+
+# --- Optional: GPU Support (for future CUDA backend) ---
+# 以下库不是必须，可选安装
+# cupy-cuda12x>=12.0.0
+# torch>=2.3.0
+# 或使用 conda 安装：conda install pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# --- Optional: Performance/Visualization ---
+tqdm>=4.66.0        # 训练进度条
+matplotlib>=3.8.0   # 可视化示例
