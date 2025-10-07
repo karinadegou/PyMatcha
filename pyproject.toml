@@ -1,5 +1,5 @@
 [build-system]
-# 🧱 构建工具配置（这是必须的）
+# 构建工具配置（这是必须的）
 requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
@@ -16,14 +16,14 @@ authors = [
 
 requires-python = ">=3.10"
 
-# 💡 从原 requirements.txt 迁移过来的依赖
+# 从原 requirements.txt 迁移过来的依赖
 dependencies = [
     "numpy>=1.26.0",
     "tqdm>=4.65.0",
     "matplotlib>=3.8.0",
 ]
 
-# 📦 分类信息（与 setup.py classifiers 相同）
+# 分类信息（与 setup.py classifiers 相同）
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -32,23 +32,23 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
-# 🌐 项目链接
+# 项目链接
 [project.urls]
 Homepage = "https://github.com/karinadegou/PyMatcha"
 Repository = "https://github.com/karinadegou/PyMatcha"
 Issues = "https://github.com/karinadegou/PyMatcha/issues"
 
-# ⚙️ setuptools 如何发现包
+# setuptools 如何发现包
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pymatcha*"]
 exclude = ["tests*", "examples*"]
 
-# 🧩 如果未来添加命令行工具（与 setup.py 的 entry_points 对应）
+# 如果未来添加命令行工具（与 setup.py 的 entry_points 对应）
 [project.scripts]
 pymatcha = "pymatcha.__main__:main"
 
-# 🧹 可选：代码风格与开发工具配置
+# 可选：代码风格与开发工具配置
 [tool.black]
 line-length = 88
 target-version = ['py39']

@@ -11,8 +11,7 @@ __version__ = "0.1.0"
 from pymatcha import tensor
 from pymatcha import nn
 from pymatcha import optim
-from pymatcha import autograd
-from pymatcha import utils
+# from pymatcha import utils
 
 # 如果需要，可以在这里添加快捷导入
 # 例如：
